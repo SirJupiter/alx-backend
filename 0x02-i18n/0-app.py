@@ -10,7 +10,7 @@ app.url_map.strict_slashes = False
 @app.route('/', methods=['GET'])
 def single_route():
     """Define a single route"""
-    return render_template('0-index.html')
+    return render_template('0-index.html',)
 
 
 if __name__ == "__main__":
