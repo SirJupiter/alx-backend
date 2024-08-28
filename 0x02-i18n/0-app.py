@@ -8,7 +8,7 @@ app.url_map.strict_slashes = False
 
 
 @app.route('/', methods=['GET'])
-def single_route() -> str:
+def single_route():
     """Define a single route"""
     return render_template('0-index.html')
 
