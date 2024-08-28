@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def single_route():
+def single_route() -> str:
     """Define a single route"""
     return render_template('0-index.html')
 
